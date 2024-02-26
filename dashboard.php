@@ -36,14 +36,14 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                         Categories
                     </p>
                     <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
                         <?php echo $listedcat;?>
                     </p>
-                    <small class="d-block">Listed Categories</small>
+                    <small class="d-block text-gray-600 dark:text-gray-200">Listed Categories</small>
                 </div>
             </div>
             <!-- Card -->
@@ -68,7 +68,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                         Companies
                     </p>
@@ -77,7 +77,7 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo $listedcomp;?>
                     </p>
-                    <small class="d-block">Listed Companies</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Listed Companies</small>
                 </div>
             </div>
             <!-- Card -->
@@ -99,7 +99,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                        Products
                     </p>
@@ -108,7 +108,7 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo $listedproduct;?>
                     </p>
-                    <small class="d-block">Listed Products</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Listed Products</small>
                 </div>
             </div>
             <!-- Card -->
@@ -132,7 +132,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                         Total Sales
                     </p>
@@ -141,7 +141,7 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo number_format($row['tt'],2);?>
                     </p>
-                    <small class="d-block">Total sales till date</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Total sales till date</small>
                 </div>
             </div>
             <?php
@@ -164,7 +164,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                       Last 7 Days Sales
                     </p>
@@ -173,7 +173,7 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo number_format($row['tt'],2);?>
                     </p>
-                    <small class="d-block">Last 7 Days Total Sales</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Last 7 Days Total Sales</small>
                 </div>
         </div>
 
@@ -197,7 +197,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                         Yesterday Sales
                     </p>
@@ -206,7 +206,7 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo number_format($rw['tt'],2);?>
                     </p>
-                    <small class="d-block">Yesterday Total Sales</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Yesterday Total Sales</small>
                 </div>
             </div>
 
@@ -230,7 +230,7 @@ if (strlen($_SESSION['aid']==0)) {
                 </div>
                 <div>
                     <p
-                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                            class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
                     >
                         Today's Sales
                     </p>
@@ -239,12 +239,10 @@ if (strlen($_SESSION['aid']==0)) {
                     >
                         <?php echo number_format($rws['tt'],2);?>
                     </p>
-                    <small class="d-block">Today's Total Sales</small>
+                    <small class="d-block text-gray-700 dark:text-gray-200">Today's Total Sales</small>
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -257,9 +255,9 @@ if (strlen($_SESSION['aid']==0)) {
             </h2>
 
             <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <h5 class="mb-3">Daily Sales</h5>
+                <h5 class="d-block text-gray-700 dark:text-gray-200">Daily Sales</h5>
                 <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
+                <span class="d-block text-gray-700 dark:text-gray-200">
                   Select Product:
                 </span>
                     <select
@@ -276,7 +274,7 @@ if (strlen($_SESSION['aid']==0)) {
                     </select>
                 </label>
 
-                <label class="block mt-4 text-sm">
+                <label class="d-block text-gray-700 dark:text-gray-200">
                     Select Date:
                     <input type="date" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" id="dailyDate" name="dailyDate"
                            value="<?= $_POST['dailyDate'] ?? ''; ?>">
@@ -306,9 +304,9 @@ if (strlen($_SESSION['aid']==0)) {
 
       <form method="post" class="container px-6 mx-auto grid">
             <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <h5 class="mb-3">Monthly Sales</h5>
+                <h5 class="mb-3 text-gray-700 dark:text-gray-200">Monthly Sales</h5>
                 <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
+                <span class="d-block text-gray-700 dark:text-gray-200">
                   Select Product:
                 </span>
                     <select
@@ -325,7 +323,7 @@ if (strlen($_SESSION['aid']==0)) {
                     </select>
                 </label>
 
-                <label class="block mt-4 text-sm">
+                <label class="d-block text-gray-700 dark:text-gray-200">
                     Select Date:
                     <input type="month" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" id="dailyDate" name="monthlyMonth"
                            value="<?= $_POST['monthlyMonth'] ?? ''; ?>">
